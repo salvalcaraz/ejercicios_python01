@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Script que pregunta el nombre del usuario en la consola y después de que el usuario lo introduzca muestre 
- por pantalla la cadena ¡Hola <nombre>!, donde <nombre> es el nombre que el usuario haya introducido.
-
+ Mostrar el precio del IVA de un producto con un valor puesto por usuario y su precio final.
 """
 
-name = input("Salva: ")
-print("¡Hola " + name + “!")
+IVA = 0.21
+precioProducto = input("Introduce un número entero: ")
+precioIVA = precioProducto * IVA
+print("El precio del IVA es", precioIVA, "€")
+ 
+print("El precio final es", (precioIVA+precioProducto) ,"€")
